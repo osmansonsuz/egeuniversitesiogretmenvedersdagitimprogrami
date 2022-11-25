@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{972AA60A-08BB-4B9B-81A2-E894CA71061D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ege_Üniversitesi_Öğretmen_ve_Ders_Dağıtım_Programı</RootNamespace>
+    <AssemblyName>Ege Üniversitesi Öğretmen ve Ders Dağıtım Programı</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\Diğer bilgisayarlar\Bilgisayarım\Format Sonrası\Ege Üniversitesi Öğretmen ve Ders Dağıtım Programı Hazır\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>CF76D86277756F9AC8A151DA45EC652FA921333B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Ege Üniversitesi Öğretmen ve Ders Dağıtım Programı_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>v8G94WPr_400x400.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ayarlarform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ayarlarform.Designer.cs">
+      <DependentUpon>ayarlarform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bolumekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bolumekle.Designer.cs">
+      <DependentUpon>bolumekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bolumlerform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bolumlerform.Designer.cs">
+      <DependentUpon>bolumlerform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bolumuduzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bolumuduzenle.Designer.cs">
+      <DependentUpon>bolumuduzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Rapor1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rapor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="raporcikti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="raporcikti.Designer.cs">
+      <DependentUpon>raporcikti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs" />
+    <Compile Include="dersduzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dersduzenle.Designer.cs">
+      <DependentUpon>dersduzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dersekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dersekle.Designer.cs">
+      <DependentUpon>dersekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dersliklerform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dersliklerform.Designer.cs">
+      <DependentUpon>dersliklerform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mainform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainform.Designer.cs">
+      <DependentUpon>Mainform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogretmenekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogretmenekle.Designer.cs">
+      <DependentUpon>ogretmenekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogretmenlerform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogretmenlerform.Designer.cs">
+      <DependentUpon>ogretmenlerform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="otomatikyerlestir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="otomatikyerlestir.Designer.cs">
+      <DependentUpon>otomatikyerlestir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="rapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rapor.Designer.cs">
+      <DependentUpon>rapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sinifekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sinifekle.Designer.cs">
+      <DependentUpon>sinifekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="tabloform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabloform.Designer.cs">
+      <DependentUpon>tabloform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tamamlanmakontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tamamlanmakontrol.Designer.cs">
+      <DependentUpon>tamamlanmakontrol.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ayarlarform.resx">
+      <DependentUpon>ayarlarform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bolumekle.resx">
+      <DependentUpon>bolumekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bolumlerform.resx">
+      <DependentUpon>bolumlerform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bolumuduzenle.resx">
+      <DependentUpon>bolumuduzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dersduzenle.resx">
+      <DependentUpon>dersduzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dersekle.resx">
+      <DependentUpon>dersekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dersliklerform.resx">
+      <DependentUpon>dersliklerform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainform.resx">
+      <DependentUpon>Mainform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogretmenekle.resx">
+      <DependentUpon>ogretmenekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogretmenlerform.resx">
+      <DependentUpon>ogretmenlerform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="otomatikyerlestir.resx">
+      <DependentUpon>otomatikyerlestir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rapor.resx">
+      <DependentUpon>rapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="raporcikti.resx">
+      <DependentUpon>raporcikti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="Report5.rdlc" />
+    <EmbeddedResource Include="Report6.rdlc" />
+    <EmbeddedResource Include="sinifekle.resx">
+      <DependentUpon>sinifekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabloform.resx">
+      <DependentUpon>tabloform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tamamlanmakontrol.resx">
+      <DependentUpon>tamamlanmakontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Ege Üniversitesi Öğretmen ve Ders Dağıtım Programı_TemporaryKey.pfx" />
+    <None Include="Rapor.xsc">
+      <DependentUpon>Rapor.xsd</DependentUpon>
+    </None>
+    <None Include="Rapor.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Rapor1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Rapor.xss">
+      <DependentUpon>Rapor.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\ayarlarform.datasource" />
+    <None Include="Properties\DataSources\bolumekle.datasource" />
+    <None Include="Properties\DataSources\bolumlerform.datasource" />
+    <None Include="Properties\DataSources\bolumuduzenle.datasource" />
+    <None Include="Properties\DataSources\Connection.datasource" />
+    <None Include="Properties\DataSources\dersduzenle.datasource" />
+    <None Include="Properties\DataSources\dersekle.datasource" />
+    <None Include="Properties\DataSources\dersliklerform.datasource" />
+    <None Include="Properties\DataSources\Ege_Üniversitesi_Öğretmen_ve_Ders_Dağıtım_Programı.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Ege_Üniversitesi_Öğretmen_ve_Ders_Dağıtım_Programı.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Mainform.datasource" />
+    <None Include="Properties\DataSources\ogretmenekle.datasource" />
+    <None Include="Properties\DataSources\ogretmenlerform.datasource" />
+    <None Include="Properties\DataSources\otomatikyerlestir.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\rapor.datasource" />
+    <None Include="Properties\DataSources\raporcikti.datasource" />
+    <None Include="Properties\DataSources\Raporciktisi.datasource" />
+    <None Include="Properties\DataSources\sinifekle.datasource" />
+    <None Include="Properties\DataSources\SqlServerTypes.Utilities.datasource" />
+    <None Include="Properties\DataSources\tabloform.datasource" />
+    <None Include="Properties\DataSources\tamamlanmakontrol.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pics\book.png" />
+    <Content Include="pics\flask.png" />
+    <Content Include="pics\floppy-disk.png" />
+    <Content Include="pics\folder.png" />
+    <Content Include="pics\id-card.png" />
+    <Content Include="pics\settings.png" />
+    <Content Include="pics\sign-out.png" />
+    <Content Include="pics\table.png" />
+    <Content Include="v8G94WPr_400x400.ico" />
+    <None Include="Resources\next-button.png" />
+    <None Include="Resources\previous.png" />
+    <None Include="Resources\previous %281%29.png" />
+    <None Include="Resources\next-button %281%29.png" />
+    <None Include="Resources\graph.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\descriptionlist1.png" />
+    <None Include="Resources\list1.png" />
+    <None Include="Resources\descriptionlist.png" />
+    <None Include="Resources\list.png" />
+    <None Include="Resources\hepsi.png" />
+    <None Include="Resources\choice.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\completed-task.png" />
+    <None Include="Resources\automatic.png" />
+    <None Include="Resources\report.png" />
+    <None Include="Resources\night.png" />
+    <None Include="Resources\sun.png" />
+    <None Include="Resources\clock.png" />
+    <None Include="Resources\schedule.png" />
+    <None Include="Resources\upload.png" />
+    <None Include="Resources\Logo_Ege_Uni.png" />
+    <None Include="Resources\copy %282%29.png" />
+    <None Include="Resources\information.png" />
+    <None Include="Resources\paste.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\copy %281%29.png" />
+    <None Include="Resources\down-arrow.png" />
+    <None Include="Resources\up-arrow.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\from-a-to-z.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\folder %281%29.png" />
+    <None Include="Resources\floppy-disk %281%29.png" />
+    <None Include="Resources\table %281%29.png" />
+    <None Include="Resources\settings %281%29.png" />
+    <None Include="Resources\flask %281%29.png" />
+    <None Include="Resources\book %282%29.png" />
+    <None Include="Resources\id-card %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="icons\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

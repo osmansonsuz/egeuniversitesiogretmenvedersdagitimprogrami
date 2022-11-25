@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS0252: İstenmeden yapılmış olabilecek başvuru karşılaştırması, sol taraf için atama gerekiyor
+dotnet_diagnostic.CS0252.severity = silent
