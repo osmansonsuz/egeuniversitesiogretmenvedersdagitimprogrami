@@ -1,7 +1,7 @@
 # egeuniversitesiogretmenvedersdagitimprogrami
 C# Winforms, Krypton Toolkit, ReportViewer, Microsoft Access Veritabanı kullanarak öğretmenleri,bölümleri,derslikleri ilişkilendirip raporlamak için yapılmış bir uygulamadır.
 
-Tablo sekmesindeki labların gösterimi yapılmadı! Raporlar sekmesine tablo sekmesinden ulaşılabilir.
+Tablo sekmesindeki dersliklerin gösterimi yapılmadı! Raporlar sekmesine tablo sekmesinden ulaşılabilir.
 
 Öğretmenler sekmesi
 ![image](https://github.com/infinityosman/egeuniversitesiogretmenvedersdagitimprogrami/assets/77057974/1f64168c-3fb1-4ddd-bf10-6681bd2c2307)
